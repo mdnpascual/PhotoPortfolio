@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photography Portfolio</title>
+    <!-- GitHub Pages SPA: redirect unknown paths back to the app -->
+    <script>
+      var l = window.location;
+      sessionStorage.redirect = l.protocol + '//' + l.hostname +
+        (l.port ? ':' + l.port : '') + l.pathname + l.search;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 2).join('/') + '/?p=' +
+        l.pathname.slice(1).split('/').join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
