@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Photography Portfolio</title>
 
-    <!-- GitHub Pages SPA: restore path after 404 redirect -->
+    <!-- GitHub Pages SPA: restore path stored by 404.html via sessionStorage -->
     <script>
-      (function(l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search.slice(1).split('&').map(function(s) {
-            return s.replace(/~and~/g, '&');
-          }).join('?');
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== window.location.href) {
+          var url = new URL(redirect);
           window.history.replaceState(null, null,
-            l.pathname.slice(0, -1) + decoded + l.hash
+            url.pathname + url.search + url.hash
           );
         }
-      }(window.location));
+      }());
     </script>
-    <script type="module" crossorigin src="/PhotoPortfolio/assets/index-KYfILTGI.js"></script>
-    <link rel="modulepreload" crossorigin href="/PhotoPortfolio/assets/router-4VPaKwIk.js">
-    <link rel="modulepreload" crossorigin href="/PhotoPortfolio/assets/motion-Cx9uah4c.js">
-    <link rel="stylesheet" crossorigin href="/PhotoPortfolio/assets/index-4tCi1KZg.css">
+    <script type="module" crossorigin src="/PhotoPortfolio/assets/index-BQ-2nsAu.js"></script>
+    <link rel="modulepreload" crossorigin href="/PhotoPortfolio/assets/router-D5PqxsFU.js">
+    <link rel="modulepreload" crossorigin href="/PhotoPortfolio/assets/motion-BGZ3vRSw.js">
+    <link rel="stylesheet" crossorigin href="/PhotoPortfolio/assets/index-BIU3K7zL.css">
   </head>
   <body>
     <div id="root"></div>
