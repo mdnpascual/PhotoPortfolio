@@ -22,6 +22,7 @@ Run steps in order. Check off each item before moving to the next.
 - [x] **5.** Run `npm create vite@latest . -- --template react-ts` in the existing project folder
   - When prompted "Current directory is not empty. Remove existing files and continue?" → type `y` only if `docs/` is safely committed or backed up. The Vite CLI only touches root-level files, not subdirectories like `docs/`.
   - **Safer alternative:** Answer `Ignore files and continue` if the prompt offers it (newer Vite versions do).
+  - **Variant chosen:** TypeScript + SWC → uses `@vitejs/plugin-react-swc` in `vite.config.ts`
 - [x] **6.** Verify these files were created: `index.html`, `src/main.tsx`, `src/App.tsx`, `src/App.css`, `src/index.css`, `package.json`, `tsconfig.json`, `tsconfig.node.json`, `vite.config.ts`
 - [x] **7.** Delete boilerplate files that won't be used: `src/App.css`, `src/assets/react.svg`, `public/vite.svg`
 
@@ -38,6 +39,7 @@ Run steps in order. Check off each item before moving to the next.
   - `react-compare-slider` (replaces `react-compare-image` — no React 18 support)
 - [x] **9.** Install dev dependencies
   - `tailwindcss`
+  - `@tailwindcss/postcss` (**added** — Tailwind v4 no longer works as a direct PostCSS plugin)
   - `autoprefixer`
   - `postcss`
   - `@types/node` (required for `path.resolve` in vite.config.ts)
@@ -51,13 +53,21 @@ Run steps in order. Check off each item before moving to the next.
 - [x] **11.** Replace `tsconfig.json` with contents from `scaffold-commands.md` (`noUnusedLocals: true` and `noUnusedParameters: true` enabled from the start)
 - [x] **12.** Delete `tsconfig.node.json` — the updated tsconfig.json from feature-12.md covers everything
 - [x] **13.** Create `tailwind.config.ts` with contents from `feature-12.md`
-- [x] **14.** Create `postcss.config.js` with contents from `feature-12.md`
-- [x] **15.** Replace `src/index.css` with Tailwind directives only:
-  ```css
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+- [x] **14.** Create `postcss.config.js` — **actual config used (Tailwind v4):**
+  ```js
+  export default {
+    plugins: {
+      '@tailwindcss/postcss': {},
+      autoprefixer: {},
+    },
+  };
   ```
+  _(feature-12.md has the old v3 config; use the above instead)_
+- [x] **15.** Replace `src/index.css` with Tailwind v4 import (**actual used**):
+  ```css
+  @import "tailwindcss";
+  ```
+  _(The three `@tailwind` directives are v3 syntax; v4 uses the single import above)_
 
 ---
 
@@ -122,7 +132,7 @@ Create all directories as specified in `implementation-plan.md`. Empty directori
 
 - [x] **25.** Create `src/config/constants.ts` with all configurable variables (see `scaffold-commands.md`)
 - [x] **26.** Update `src/main.tsx` — wrap app in `BrowserRouter` with correct `basename`
-- [ ] **27.** Simplify `src/App.tsx` to a shell component (just returns `<div>App</div>` for now)
+- [x] **27.** Simplify `src/App.tsx` to a shell component (just returns `<div>App</div>` for now)
 - [x] **28.** Create stub page files in `src/pages/` — one per route, each just returns `<div>PageName</div>`:
   - `LandingPage.tsx`, `GalleryPage.tsx`, `TechniquesPage.tsx`, `PostProcessingPage.tsx`, `GearPage.tsx`, `AboutPage.tsx`, `ContactPage.tsx`
 - [x] **29.** Create `src/router/AppRouter.tsx` — static (no lazy loading yet; F13 adds that), just `<Routes>` with all stub pages
@@ -140,24 +150,31 @@ Create all directories as specified in `implementation-plan.md`. Empty directori
 
 ## Step 10 — Git & Deploy
 
-- [ ] **34.** Initialise git if not already done (`git init`)
-- [ ] **35.** Create `.gitignore` — ensure `node_modules/`, `dist/` are excluded
-- [ ] **36.** Stage and commit all scaffold files
-- [ ] **37.** Push to `main` branch on GitHub — GitHub Actions should trigger automatically
-- [ ] **38.** In GitHub repo → **Settings → Pages → Source**: set to `gh-pages` branch (created by the action on first deploy)
-- [ ] **39.** Verify live deploy at `https://<your-username>.github.io/PhotoPortfolio/`
+- [x] **34.** Initialise git if not already done (`git init`)
+- [x] **35.** Create `.gitignore` — ensure `node_modules/`, `dist/` are excluded
+- [x] **36.** Stage and commit all scaffold files
+- [x] **37.** Push to `main` branch on GitHub — GitHub Actions should trigger automatically
+- [x] **38.** In GitHub repo → **Settings → Pages → Source**: set to `gh-pages` branch (created by the action on first deploy)
+- [x] **39.** Verify live deploy at `https://<your-username>.github.io/PhotoPortfolio/`
 
 ---
 
 ## Post-Scaffold Verification
 
-- [ ] **40.** Navigate to a stub page directly (e.g., `https://.../PhotoPortfolio/gallery`) — should load (not 404) thanks to `public/404.html`
-- [ ] **41.** Open browser DevTools → Network → confirm no errors, no missing chunk files
-- [ ] **42.** Check bundle output in `dist/` — confirm named chunks (`react.js`, `router.js`, `motion.js`, etc.) are present
+- [x] **40.** Navigate to a stub page directly — **issue found:** 404.html fires (no raw 404), but SPA restore script fails to re-route. URL becomes `?p=PhotoPortfolio/gallery` and shows Landing Page instead of `/gallery`. Works correctly in local dev. **Fix in F07 Routing.**
+- [ ] **41.** Open browser DevTools → Network → confirm no errors, no missing chunk files _(not verified)_
+- [ ] **42.** Check bundle output in `dist/` — confirm named chunks (`react.js`, `router.js`, `motion.js`, etc.) are present _(not verified)_
 
 ---
 
-## ⚠️ Remaining Blocker
+---
 
-- **GitHub repo not yet created.** Create it on GitHub.com before running Block 13 (git remote + push).
-  All other questions are resolved — commands are ready to run.
+## Phase 1 Complete ✓
+
+- Dev server runs without errors
+- Build passes (`npm run build`)
+- Site live at `https://mdnpascual.github.io/PhotoPortfolio/`
+- **Items 41–42 not verified** — defer to post-F07
+- **Item 40 known issue** — GitHub Pages SPA restore broken; fix in F07 Routing
+- **Tailwind v4 deviation** — see items 9, 14, 15
+- **SWC deviation** — see item 5
