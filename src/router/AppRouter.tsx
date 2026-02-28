@@ -3,6 +3,7 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop          from "../components/ScrollToTop";
 import PageTransition       from "../components/PageTransition";
+import { PageErrorBoundary } from "../components/error";
 import LandingPage          from "../pages/LandingPage";
 import GalleryPage          from "../pages/GalleryPage";
 import TechniquesPage       from "../pages/TechniquesPage";
@@ -33,13 +34,13 @@ export default function AppRouter() {
       <ScrollToTop />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/"                element={<PageTransition><LandingPage /></PageTransition>} />
-          <Route path="/gallery"         element={<PageTransition><GalleryPage /></PageTransition>} />
-          <Route path="/techniques"      element={<PageTransition><TechniquesPage /></PageTransition>} />
-          <Route path="/post-processing" element={<PageTransition><PostProcessingPage /></PageTransition>} />
-          <Route path="/gear"            element={<PageTransition><GearPage /></PageTransition>} />
-          <Route path="/about"           element={<PageTransition><AboutPage /></PageTransition>} />
-          <Route path="/contact"         element={<PageTransition><ContactPage /></PageTransition>} />
+          <Route path="/"                element={<PageTransition><PageErrorBoundary><LandingPage /></PageErrorBoundary></PageTransition>} />
+          <Route path="/gallery"         element={<PageTransition><PageErrorBoundary><GalleryPage /></PageErrorBoundary></PageTransition>} />
+          <Route path="/techniques"      element={<PageTransition><PageErrorBoundary><TechniquesPage /></PageErrorBoundary></PageTransition>} />
+          <Route path="/post-processing" element={<PageTransition><PageErrorBoundary><PostProcessingPage /></PageErrorBoundary></PageTransition>} />
+          <Route path="/gear"            element={<PageTransition><PageErrorBoundary><GearPage /></PageErrorBoundary></PageTransition>} />
+          <Route path="/about"           element={<PageTransition><PageErrorBoundary><AboutPage /></PageErrorBoundary></PageTransition>} />
+          <Route path="/contact"         element={<PageTransition><PageErrorBoundary><ContactPage /></PageErrorBoundary></PageTransition>} />
           <Route path="*"                element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>

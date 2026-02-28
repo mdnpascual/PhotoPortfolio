@@ -7,9 +7,9 @@
 ## Current Status
 
 - **Phase:** Phase 3 IN PROGRESS
-- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · F06 ✓ · F10 ✓ · F11 ✓ · Build passes · Site live on GitHub Pages
+- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · F06 ✓ · F10 ✓ · F11 ✓ · F14 ✓ · Build passes · Site live on GitHub Pages
 - **Blocking:** None
-- **Immediate next action:** F14 (error boundaries) — final Phase 3 item
+- **Immediate next action:** F01 (nav drawer) — Phase 4
 
 ---
 
@@ -18,8 +18,8 @@
 ```
 Phase 1 — Foundation:     F12 (scaffold) ✓
 Phase 2 — Infrastructure: F07 (routing) ✓ · F06 (images) ✓ · F10 (shared components) ✓
-Phase 3 — Data & Safety:  F11 (data schemas/hooks) + F14 (error boundaries) ← YOU ARE HERE
-Phase 4 — Navigation:     F01 (nav drawer)
+Phase 3 — Data & Safety:  F11 (data schemas/hooks) + F14 (error boundaries) ✓
+Phase 4 — Navigation:     F01 (nav drawer) ← YOU ARE HERE
 Phase 5 — Core Pages:     F02 (landing) + F03 (gallery) [MVP] → F04 (techniques) → F05 (post-processing) [post-MVP]
 Phase 6 — Supporting:     F08 (gear) + F09 (about/contact)
 Phase 7 — Polish:         F13 (performance) + F15 (mobile gestures)
@@ -32,11 +32,7 @@ F04 and F05 can be placeholder pages at MVP deploy.
 
 ## Next Steps (Resume Here)
 
-1. **Begin Phase 3** — implement in parallel or sequentially:
-   - **F11** Data Schemas & Hooks — `docs/features/feature-11.md`
-   - **F14** Error Boundaries — `docs/features/feature-14.md`
-
-2. **After Phase 3**: F01 (nav drawer)
+1. **Begin Phase 4** — F01 (nav drawer) — `docs/features/feature-01.md`
 
 ---
 
@@ -140,4 +136,5 @@ F04 and F05 can be placeholder pages at MVP deploy.
 |---|---|---|
 | Phase 1 — F12 scaffold | ✓ Complete | 2026-02-27 |
 | Phase 2 — F07+F06+F10 | ✓ Complete | 2026-02-27 |
-| Phase 3 — F11+F14 | ⏳ In Progress | 2026-02-27 |
+| Phase 3 — F11+F14 | ✓ Complete | 2026-02-27 |
+| Phase 4 — F01 | ⏳ In Progress | 2026-02-27 |
