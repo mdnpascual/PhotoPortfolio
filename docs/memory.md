@@ -7,9 +7,9 @@
 ## Current Status
 
 - **Phase:** Phase 2 IN PROGRESS
-- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · Build passes · Site live on GitHub Pages
+- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · F06 ✓ · Build passes · Site live on GitHub Pages
 - **Blocking:** None
-- **Immediate next action:** F06 (image loading) + F10 (shared components)
+- **Immediate next action:** F10 (shared components)
 
 ---
 
@@ -17,7 +17,7 @@
 
 ```
 Phase 1 — Foundation:     F12 (scaffold) ✓
-Phase 2 — Infrastructure: F07 (routing) ✓ · F06 (images) · F10 (shared components) ← YOU ARE HERE
+Phase 2 — Infrastructure: F07 (routing) ✓ · F06 (images) ✓ · F10 (shared components) ← YOU ARE HERE
 Phase 3 — Data & Safety:  F11 (data schemas/hooks) + F14 (error boundaries)
 Phase 4 — Navigation:     F01 (nav drawer)
 Phase 5 — Core Pages:     F02 (landing) + F03 (gallery) [MVP] → F04 (techniques) → F05 (post-processing) [post-MVP]
@@ -32,8 +32,7 @@ F04 and F05 can be placeholder pages at MVP deploy.
 
 ## Next Steps (Resume Here)
 
-1. **Complete Phase 2** — implement in parallel or sequentially:
-   - **F06** Image Loading — `docs/features/feature-06.md`
+1. **Complete Phase 2:**
    - **F10** Shared Components — `docs/features/feature-10.md`
 
 2. **After Phase 2**: implement F11 + F14 (Phase 3)
@@ -45,6 +44,7 @@ F04 and F05 can be placeholder pages at MVP deploy.
 ### Tech Stack
 - **Framework:** React + Vite + TypeScript (strict, `noUnusedLocals: true`)
 - **Styling:** Tailwind CSS v4 — `@import "tailwindcss"` in index.css, `@tailwindcss/postcss` plugin
+- **tsconfig:** `"types": ["vite/client"]` added — required for `import.meta.env` typing
 - **Animations:** Framer Motion (transitions, UI) + GSAP + ScrollTrigger (scroll-driven, REQUIRED)
 - **Smooth Scroll:** `lenis` (darkroomengineering package)
 - **Routing:** React Router DOM · browser history · `basename="/PhotoPortfolio"` · fade 300ms via Framer Motion AnimatePresence
