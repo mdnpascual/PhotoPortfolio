@@ -2,14 +2,17 @@
 
 ## Last Updated: 2026-02-27
 
+> **Start here:** Read `docs\project-structure.md` before exploring the codebase.
+> Keep `docs\project-structure.md` updated whenever files are added, renamed, or deleted.
+
 ---
 
 ## Current Status
 
-- **Phase:** Phase 3 IN PROGRESS
-- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · F06 ✓ · F10 ✓ · F11 ✓ · F14 ✓ · Build passes · Site live on GitHub Pages
+- **Phase:** Phase 4 COMPLETE → Phase 5 next
+- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · F06 ✓ · F10 ✓ · F11 ✓ · F14 ✓ · F01 ✓ · Build passes · Site live on GitHub Pages
 - **Blocking:** None
-- **Immediate next action:** F01 (nav drawer) — Phase 4
+- **Immediate next action:** F02 (landing page) + F03 (gallery) — Phase 5
 
 ---
 
@@ -19,7 +22,7 @@
 Phase 1 — Foundation:     F12 (scaffold) ✓
 Phase 2 — Infrastructure: F07 (routing) ✓ · F06 (images) ✓ · F10 (shared components) ✓
 Phase 3 — Data & Safety:  F11 (data schemas/hooks) + F14 (error boundaries) ✓
-Phase 4 — Navigation:     F01 (nav drawer) ← YOU ARE HERE
+Phase 4 — Navigation:     F01 (nav drawer) ✓
 Phase 5 — Core Pages:     F02 (landing) + F03 (gallery) [MVP] → F04 (techniques) → F05 (post-processing) [post-MVP]
 Phase 6 — Supporting:     F08 (gear) + F09 (about/contact)
 Phase 7 — Polish:         F13 (performance) + F15 (mobile gestures)
@@ -32,7 +35,7 @@ F04 and F05 can be placeholder pages at MVP deploy.
 
 ## Next Steps (Resume Here)
 
-1. **Begin Phase 4** — F01 (nav drawer) — `docs/features/feature-01.md`
+1. **Begin Phase 5** — F02 (landing page) + F03 (gallery) — `docs/features/feature-02.md` / `feature-03.md`
 
 ---
 
@@ -137,4 +140,5 @@ F04 and F05 can be placeholder pages at MVP deploy.
 | Phase 1 — F12 scaffold | ✓ Complete | 2026-02-27 |
 | Phase 2 — F07+F06+F10 | ✓ Complete | 2026-02-27 |
 | Phase 3 — F11+F14 | ✓ Complete | 2026-02-27 |
-| Phase 4 — F01 | ⏳ In Progress | 2026-02-27 |
+| Phase 4 — F01 | ✓ Complete | 2026-02-27 |
+| Phase 5 — F02+F03 | ⏳ In Progress | 2026-02-27 |
