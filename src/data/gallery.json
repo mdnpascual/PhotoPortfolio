@@ -1,0 +1,82 @@
+[
+  {
+    "id": "birds-owl-1",
+    "category": "birds",
+    "title": "Great Horned Owl",
+    "aspectRatio": "3x2",
+    "editedLandscape": "gallery-birds-owl-edited-3x2-landscape.webp",
+    "editedPortrait": "gallery-birds-owl-edited-4x5-portrait.webp",
+    "originalLandscape": "gallery-birds-owl-original-3x2-landscape.webp",
+    "originalPortrait": "gallery-birds-owl-original-4x5-portrait.webp"
+  },
+  {
+    "id": "birds-heron-1",
+    "category": "birds",
+    "title": "Great Blue Heron",
+    "aspectRatio": "3x2",
+    "editedLandscape": "gallery-birds-heron-edited-3x2-landscape.webp",
+    "editedPortrait": "gallery-birds-heron-edited-4x5-portrait.webp",
+    "originalLandscape": "gallery-birds-heron-original-3x2-landscape.webp",
+    "originalPortrait": "gallery-birds-heron-original-4x5-portrait.webp"
+  },
+  {
+    "id": "wildlife-fox-1",
+    "category": "wildlife",
+    "title": "Red Fox",
+    "aspectRatio": "3x2",
+    "editedLandscape": "gallery-wildlife-fox-edited-3x2-landscape.webp",
+    "editedPortrait": "gallery-wildlife-fox-edited-4x5-portrait.webp",
+    "originalLandscape": "gallery-wildlife-fox-original-3x2-landscape.webp",
+    "originalPortrait": "gallery-wildlife-fox-original-4x5-portrait.webp"
+  },
+  {
+    "id": "wildlife-deer-1",
+    "category": "wildlife",
+    "title": "White-tailed Deer",
+    "aspectRatio": "3x2",
+    "editedLandscape": "gallery-wildlife-deer-edited-3x2-landscape.webp",
+    "editedPortrait": "gallery-wildlife-deer-edited-4x5-portrait.webp",
+    "originalLandscape": "gallery-wildlife-deer-original-3x2-landscape.webp",
+    "originalPortrait": "gallery-wildlife-deer-original-4x5-portrait.webp"
+  },
+  {
+    "id": "landscape-mountain-1",
+    "category": "landscape",
+    "title": "Mountain Sunrise",
+    "aspectRatio": "16x9",
+    "editedLandscape": "gallery-landscape-mountain-edited-16x9-landscape.webp",
+    "editedPortrait": "gallery-landscape-mountain-edited-4x5-portrait.webp",
+    "originalLandscape": "gallery-landscape-mountain-original-16x9-landscape.webp",
+    "originalPortrait": "gallery-landscape-mountain-original-4x5-portrait.webp"
+  },
+  {
+    "id": "landscape-waterfall-1",
+    "category": "landscape",
+    "title": "Waterfall at Dusk",
+    "aspectRatio": "3x2",
+    "editedLandscape": "gallery-landscape-waterfall-edited-3x2-landscape.webp",
+    "editedPortrait": "gallery-landscape-waterfall-edited-4x5-portrait.webp",
+    "originalLandscape": "gallery-landscape-waterfall-original-3x2-landscape.webp",
+    "originalPortrait": "gallery-landscape-waterfall-original-4x5-portrait.webp"
+  },
+  {
+    "id": "people-portrait-1",
+    "category": "people",
+    "title": "Street Portrait",
+    "aspectRatio": "4x5",
+    "editedLandscape": "gallery-people-portrait-edited-3x2-landscape.webp",
+    "editedPortrait": "gallery-people-portrait-edited-4x5-portrait.webp",
+    "originalLandscape": "gallery-people-portrait-original-3x2-landscape.webp",
+    "originalPortrait": "gallery-people-portrait-original-4x5-portrait.webp"
+  },
+  {
+    "id": "people-silhouette-1",
+    "category": "people",
+    "title": "Golden Hour Silhouette",
+    "aspectRatio": "3x2",
+    "editedLandscape": "gallery-people-silhouette-edited-3x2-landscape.webp",
+    "editedPortrait": "gallery-people-silhouette-edited-4x5-portrait.webp",
+    "originalLandscape": "gallery-people-silhouette-original-3x2-landscape.webp",
+    "originalPortrait": "gallery-people-silhouette-original-4x5-portrait.webp"
+  }
+]

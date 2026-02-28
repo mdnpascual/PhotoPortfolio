@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sony-a7iv",
+    "name": "Sony A7 IV",
+    "category": "camera",
+    "image": "gear-camera-sony-a7iv-1x1.webp",
+    "description": "Full-frame mirrorless camera body with 33MP sensor and advanced autofocus."
+  },
+  {
+    "id": "sony-200-600",
+    "name": "Sony 200-600mm f/5.6-6.3 G OSS",
+    "category": "lens",
+    "image": "gear-lens-sony-200-600-1x1.webp",
+    "description": "Super-telephoto zoom lens ideal for wildlife and bird photography."
+  },
+  {
+    "id": "sony-90-macro",
+    "name": "Sony 90mm f/2.8 Macro G OSS",
+    "category": "lens",
+    "image": "gear-lens-sony-90-macro-1x1.webp",
+    "description": "True 1:1 macro lens with optical stabilisation for close-up work."
+  },
+  {
+    "id": "gitzo-gt3543ls",
+    "name": "Gitzo GT3543LS Series 3",
+    "category": "tripod",
+    "image": "gear-tripod-gitzo-gt3543ls-1x1.webp",
+    "description": "Carbon fibre tripod offering exceptional stability for landscape photography."
+  },
+  {
+    "id": "nisi-v7-100mm",
+    "name": "NiSi V7 100mm Filter System",
+    "category": "filter",
+    "image": "gear-filter-nisi-v7-1x1.webp",
+    "description": "Modular filter holder system compatible with ND, GND, and CPL filters."
+  }
+]

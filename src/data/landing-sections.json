@@ -1,0 +1,132 @@
+[
+  {
+    "id": "hero",
+    "order": 1,
+    "title": "MDuh Photography",
+    "subtitle": "Capturing the world one frame at a time",
+    "cta": "Explore",
+    "route": "/gallery",
+    "landscape": "landing-hero-3x2-landscape.webp",
+    "portrait": "landing-hero-4x5-portrait.webp"
+  },
+  {
+    "id": "birds",
+    "order": 2,
+    "title": "Birds",
+    "subtitle": "In flight and at rest",
+    "cta": "View Gallery",
+    "route": "/gallery/birds",
+    "landscape": "landing-birds-3x2-landscape.webp",
+    "portrait": "landing-birds-4x5-portrait.webp"
+  },
+  {
+    "id": "wildlife",
+    "order": 3,
+    "title": "Wildlife",
+    "subtitle": "The wild side of nature",
+    "cta": "View Gallery",
+    "route": "/gallery/wildlife",
+    "landscape": "landing-wildlife-3x2-landscape.webp",
+    "portrait": "landing-wildlife-4x5-portrait.webp"
+  },
+  {
+    "id": "landscape",
+    "order": 4,
+    "title": "Landscape",
+    "subtitle": "From mountains to shorelines",
+    "cta": "View Gallery",
+    "route": "/gallery/landscape",
+    "landscape": "landing-landscape-3x2-landscape.webp",
+    "portrait": "landing-landscape-4x5-portrait.webp"
+  },
+  {
+    "id": "macro",
+    "order": 5,
+    "title": "Macro",
+    "subtitle": "The world at 1:1",
+    "cta": "See the Technique",
+    "route": "/techniques/macro",
+    "landscape": "landing-macro-3x2-landscape.webp",
+    "portrait": "landing-macro-4x5-portrait.webp"
+  },
+  {
+    "id": "focus-stacking",
+    "order": 6,
+    "title": "Focus Stacking",
+    "subtitle": "Infinite depth of field",
+    "cta": "See the Technique",
+    "route": "/techniques/focus-stacking",
+    "landscape": "landing-focus-stacking-3x2-landscape.webp",
+    "portrait": "landing-focus-stacking-4x5-portrait.webp"
+  },
+  {
+    "id": "macro-workflow",
+    "order": 7,
+    "title": "Macro Workflow",
+    "subtitle": "From field to final image",
+    "cta": "See the Technique",
+    "route": "/techniques/macro",
+    "landscape": "landing-macro-workflow-3x2-landscape.webp",
+    "portrait": "landing-macro-workflow-4x5-portrait.webp"
+  },
+  {
+    "id": "360-stitching",
+    "order": 8,
+    "title": "360° Stitching",
+    "subtitle": "Every angle, every detail",
+    "cta": "See the Technique",
+    "route": "/techniques/360-stitching",
+    "landscape": "landing-360-stitching-3x2-landscape.webp",
+    "portrait": "landing-360-stitching-4x5-portrait.webp"
+  },
+  {
+    "id": "long-exposure",
+    "order": 9,
+    "title": "Long Exposure",
+    "subtitle": "Time made visible",
+    "cta": "See the Technique",
+    "route": "/techniques/long-exposure",
+    "landscape": "landing-long-exposure-3x2-landscape.webp",
+    "portrait": "landing-long-exposure-4x5-portrait.webp"
+  },
+  {
+    "id": "post-processing",
+    "order": 10,
+    "title": "Post-Processing",
+    "subtitle": "Where the magic happens",
+    "cta": "See the Process",
+    "route": "/post-processing",
+    "landscape": "landing-post-processing-3x2-landscape.webp",
+    "portrait": "landing-post-processing-4x5-portrait.webp"
+  },
+  {
+    "id": "gear",
+    "order": 11,
+    "title": "Gear",
+    "subtitle": "Tools of the trade",
+    "cta": "View Gear",
+    "route": "/gear",
+    "landscape": "landing-gear-3x2-landscape.webp",
+    "portrait": "landing-gear-4x5-portrait.webp"
+  },
+  {
+    "id": "about",
+    "order": 12,
+    "title": "About",
+    "subtitle": "The photographer behind the lens",
+    "cta": "Learn More",
+    "route": "/about",
+    "landscape": "landing-about-3x2-landscape.webp",
+    "portrait": "landing-about-4x5-portrait.webp"
+  },
+  {
+    "id": "contact",
+    "order": 13,
+    "title": "Contact",
+    "subtitle": "Let's create something together",
+    "cta": "Get in Touch",
+    "route": "/contact",
+    "landscape": "landing-contact-3x2-landscape.webp",
+    "portrait": "landing-contact-4x5-portrait.webp"
+  }
+]

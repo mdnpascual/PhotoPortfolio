@@ -1,0 +1,94 @@
+[
+  {
+    "id": "focus-stacking",
+    "slug": "focus-stacking",
+    "title": "Focus Stacking",
+    "description": "Focus stacking combines multiple images taken at different focal distances to produce a single image with a greater depth of field than any of the individual source images.",
+    "softwareUsed": [
+      { "id": "photoshop", "label": "Adobe Photoshop", "icon": "icon-photoshop.svg" },
+      { "id": "helicon", "label": "Helicon Focus", "icon": "icon-helicon.svg" }
+    ],
+    "images": [
+      {
+        "step": 1,
+        "landscape": "techniques-focus-stacking-step-1-3x2-landscape.webp",
+        "portrait": "techniques-focus-stacking-step-1-3x4-portrait.webp"
+      },
+      {
+        "step": 2,
+        "landscape": "techniques-focus-stacking-step-2-3x2-landscape.webp",
+        "portrait": "techniques-focus-stacking-step-2-3x4-portrait.webp"
+      },
+      {
+        "step": 3,
+        "landscape": "techniques-focus-stacking-step-3-3x2-landscape.webp",
+        "portrait": "techniques-focus-stacking-step-3-3x4-portrait.webp"
+      }
+    ]
+  },
+  {
+    "id": "macro",
+    "slug": "macro",
+    "title": "Macro Photography",
+    "description": "Macro photography is extreme close-up photography, usually of very small subjects and living organisms like insects, in which the size of the subject in the photograph is greater than life size.",
+    "softwareUsed": [
+      { "id": "lightroom", "label": "Adobe Lightroom", "icon": "icon-lightroom.svg" }
+    ],
+    "images": [
+      {
+        "step": 1,
+        "landscape": "techniques-macro-step-1-3x2-landscape.webp",
+        "portrait": "techniques-macro-step-1-3x4-portrait.webp"
+      },
+      {
+        "step": 2,
+        "landscape": "techniques-macro-step-2-3x2-landscape.webp",
+        "portrait": "techniques-macro-step-2-3x4-portrait.webp"
+      }
+    ]
+  },
+  {
+    "id": "long-exposure",
+    "slug": "long-exposure",
+    "title": "Long Exposure",
+    "description": "Long-exposure photography uses a long shutter duration to sharply capture stationary elements while blurring, smearing, or obscuring moving elements.",
+    "softwareUsed": [
+      { "id": "lightroom", "label": "Adobe Lightroom", "icon": "icon-lightroom.svg" },
+      { "id": "photoshop", "label": "Adobe Photoshop", "icon": "icon-photoshop.svg" }
+    ],
+    "images": [
+      {
+        "step": 1,
+        "landscape": "techniques-long-exposure-step-1-16x9-landscape.webp",
+        "portrait": "techniques-long-exposure-step-1-3x4-portrait.webp"
+      },
+      {
+        "step": 2,
+        "landscape": "techniques-long-exposure-step-2-16x9-landscape.webp",
+        "portrait": "techniques-long-exposure-step-2-3x4-portrait.webp"
+      }
+    ]
+  },
+  {
+    "id": "360-stitching",
+    "slug": "360-stitching",
+    "title": "360° Stitching",
+    "description": "Panoramic stitching combines multiple overlapping photographs to create a seamless wide or 360-degree panoramic image.",
+    "softwareUsed": [
+      { "id": "ptgui", "label": "PTGui", "icon": "icon-ptgui.svg" },
+      { "id": "photoshop", "label": "Adobe Photoshop", "icon": "icon-photoshop.svg" }
+    ],
+    "images": [
+      {
+        "step": 1,
+        "landscape": "techniques-360-stitching-step-1-16x9-landscape.webp",
+        "portrait": "techniques-360-stitching-step-1-3x4-portrait.webp"
+      },
+      {
+        "step": 2,
+        "landscape": "techniques-360-stitching-step-2-16x9-landscape.webp",
+        "portrait": "techniques-360-stitching-step-2-3x4-portrait.webp"
+      }
+    ]
+  }
+]
