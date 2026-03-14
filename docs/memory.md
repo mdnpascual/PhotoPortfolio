@@ -9,10 +9,10 @@
 
 ## Current Status
 
-- **Phase:** Phase 4 COMPLETE → Phase 5 next
-- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · F06 ✓ · F10 ✓ · F11 ✓ · F14 ✓ · F01 ✓ · Build passes · Site live on GitHub Pages
+- **Phase:** Phase 5 in progress
+- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · F06 ✓ · F10 ✓ · F11 ✓ · F14 ✓ · F01 ✓ · F02 ✓ · F03 ✓ · Build passes · Site live on GitHub Pages
 - **Blocking:** None
-- **Immediate next action:** F02 (landing page) + F03 (gallery) — Phase 5
+- **Immediate next action:** Phase 6 — F08 (gear) + F09 (about/contact)
 
 ---
 
@@ -35,7 +35,7 @@ F04 and F05 can be placeholder pages at MVP deploy.
 
 ## Next Steps (Resume Here)
 
-1. **Begin Phase 5** — F02 (landing page) + F03 (gallery) — `docs/features/feature-02.md` / `feature-03.md`
+1. **Begin Phase 6** — F08 (gear) + F09 (about/contact) — `docs/features/feature-08.md` / `feature-09.md`
 
 ---
 
@@ -141,4 +141,4 @@ F04 and F05 can be placeholder pages at MVP deploy.
 | Phase 2 — F07+F06+F10 | ✓ Complete | 2026-02-27 |
 | Phase 3 — F11+F14 | ✓ Complete | 2026-02-27 |
 | Phase 4 — F01 | ✓ Complete | 2026-02-27 |
-| Phase 5 — F02+F03 | ⏳ In Progress | 2026-02-27 |
+| Phase 5 — F02+F03 | ✓ Complete | 2026-03-13 |

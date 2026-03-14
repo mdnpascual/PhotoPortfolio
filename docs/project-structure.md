@@ -53,10 +53,17 @@ src/
 │   │   └── PageErrorBoundary.tsx  — Half-page error UI with retry button
 │   │
 │   ├── about/          (empty — F09)
-│   ├── gallery/        (empty — F03)
+│   ├── gallery/                         — F03
+│   │   ├── index.ts               — Barrel: PhotoCard, PhotoOverlay
+│   │   ├── PhotoCard.tsx          — Grid item: hover scale (desktop), aspect-ratio, click to open
+│   │   └── PhotoOverlay.tsx       — Full-screen overlay: comparison slider, hold-for-original, before/after labels
 │   ├── gear/           (empty — F08)
 │   ├── image/          (empty — F06 extras)
-│   ├── landing/        (empty — F02)
+│   ├── landing/                         — F02
+│   │   ├── index.ts               — Barrel: ScrollSection
+│   │   ├── ScrollSection.tsx      — Thin shell: composes SectionBackground + SectionContent
+│   │   ├── SectionBackground.tsx  — Parallax image (bgRef/scaleRef injected by LandingPage)
+│   │   └── SectionContent.tsx     — Framer Motion text/CTA, animates on isActive prop
 │   ├── post-processing/(empty — F05)
 │   └── techniques/     (empty — F04)
 │
