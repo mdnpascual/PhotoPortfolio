@@ -50,26 +50,6 @@
     "portrait": "landing-macro-4x5-portrait.webp"
   },
   {
-    "id": "focus-stacking",
-    "order": 6,
-    "title": "Focus Stacking",
-    "subtitle": "Infinite depth of field",
-    "cta": "See the Technique",
-    "route": "/techniques/focus-stacking",
-    "landscape": "landing-focus-stacking-3x2-landscape.webp",
-    "portrait": "landing-focus-stacking-4x5-portrait.webp"
-  },
-  {
-    "id": "macro-workflow",
-    "order": 7,
-    "title": "Macro Workflow",
-    "subtitle": "From field to final image",
-    "cta": "See the Technique",
-    "route": "/techniques/macro",
-    "landscape": "landing-macro-workflow-3x2-landscape.webp",
-    "portrait": "landing-macro-workflow-4x5-portrait.webp"
-  },
-  {
     "id": "360-stitching",
     "order": 8,
     "title": "360° Stitching",

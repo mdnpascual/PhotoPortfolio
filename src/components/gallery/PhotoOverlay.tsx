@@ -4,13 +4,6 @@ import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slide
 import { HOLD_THRESHOLD } from "../../config/constants";
 import type { GalleryImage } from "../../types/gallery";
 
-/**
- * Toggle: when true, image width = 80vw (viewport-relative).
- * Set to false to compare against fixed 160px total padding instead.
- */
-const USE_VIEWPORT_PADDING = true;
-const IMAGE_WIDTH = USE_VIEWPORT_PADDING ? "80vw" : "calc(100% - 160px)";
-
 interface PhotoOverlayProps {
   image: GalleryImage;
   editedUrl: string;
@@ -29,6 +22,12 @@ export default function PhotoOverlay({
 }: PhotoOverlayProps) {
   const [sliderEnabled, setSliderEnabled] = useState(true);
   const [showingOriginal, setShowingOriginal] = useState(false);
+
+  // Constrain width so image height never exceeds (100vh - 120px), preventing
+  // controls from being clipped above the viewport on large / landscape screens.
+  const [arW, arH] = aspectRatio.split("/").map(Number);
+  const arValue = arW / arH;
+  const contentWidth = `min(80vw, calc((100vh - 120px) * ${arValue}))`;
 
   const holdTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const wasHeldRef = useRef(false);
@@ -91,7 +90,7 @@ export default function PhotoOverlay({
 
       {/* Content area — stop click propagation so overlay doesn't close */}
       <div
-        style={{ width: IMAGE_WIDTH }}
+        style={{ width: contentWidth }}
         className="flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >

@@ -89,8 +89,15 @@ This file tracks all features generated for the PhotoPortfolio project.
     - Priority: Low (mobile UX improvements)
     - Covers: swipe-to-dismiss drawer, overscroll prevention, iOS safe area insets, touch-action optimisations
 
+### Batch 5 (2026-03-14)
+16. **Feature 16**: Gallery Overlay Controls
+    - File: `feature-16.md`
+    - Status: Defined
+    - Priority: High (F03 bug fix — controls not visible in running app)
+    - Covers: "Hold for Original" button, comparison slider toggle, before/after labels
+
 ---
 
-**Total Features Defined**: 15
-**Total Features Planned**: 15
-**Last Updated**: 2026-02-22
+**Total Features Defined**: 16
+**Total Features Planned**: 16
+**Last Updated**: 2026-03-14

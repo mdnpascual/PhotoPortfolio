@@ -10,9 +10,9 @@
 ## Current Status
 
 - **Phase:** Phase 5 in progress
-- **Progress:** 15/15 features defined · F12 ✓ · F07 ✓ · F06 ✓ · F10 ✓ · F11 ✓ · F14 ✓ · F01 ✓ · F02 ✓ · F03 ✓ · Build passes · Site live on GitHub Pages
-- **Blocking:** None
-- **Immediate next action:** Phase 6 — F08 (gear) + F09 (about/contact)
+- **Progress:** 16/16 features defined · F12 ✓ · F07 ✓ · F06 ✓ · F10 ✓ · F11 ✓ · F14 ✓ · F01 ✓ · F02 ✓ · F03 ⚠️ · F16 ✓ · Build passes · Site live on GitHub Pages
+- **Blocking:** none
+- **Immediate next action:** Phase 6 — F08 (gear page) + F09 (about/contact)
 
 ---
 
@@ -35,7 +35,7 @@ F04 and F05 can be placeholder pages at MVP deploy.
 
 ## Next Steps (Resume Here)
 
-1. **Begin Phase 6** — F08 (gear) + F09 (about/contact) — `docs/features/feature-08.md` / `feature-09.md`
+1. **Phase 6** — F08 (gear page) + F09 (about/contact)
 
 ---
 
@@ -128,8 +128,9 @@ F04 and F05 can be placeholder pages at MVP deploy.
 | `docs/TECHNIQUES.md` | Techniques page spec |
 | `docs/POST_PROCESSING.md` | Post-processing page spec |
 | `docs/implementation-plan.md` | Full 15-feature phased plan with complexity, deps, key files |
-| `docs/features/index.md` | Feature tracking index (15/15 defined) |
-| `docs/features/feature-01.md` … `feature-15.md` | Individual feature specs |
+| `docs/features/index.md` | Feature tracking index (16/16 defined) |
+| `docs/features/feature-01.md` … `feature-16.md` | Individual feature specs |
+| `docs/landing-scroll-conversion.md` | How to convert landing page from horizontal wipe → vertical scroll (~6 lines, no image changes) |
 
 ---
 
