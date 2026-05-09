@@ -63,11 +63,11 @@
     "id": "people-portrait-1",
     "category": "people",
     "title": "Street Portrait",
-    "aspectRatio": "4x5",
-    "editedLandscape": "gallery-people-portrait-edited-3x2-landscape.webp",
-    "editedPortrait": "gallery-people-portrait-edited-4x5-portrait.webp",
-    "originalLandscape": "gallery-people-portrait-original-3x2-landscape.webp",
-    "originalPortrait": "gallery-people-portrait-original-4x5-portrait.webp"
+    "aspectRatio": "2x3",
+    "editedLandscape": "gallery-people-portrait-edited-2x3-landscape.webp",
+    "editedPortrait": "gallery-people-portrait-edited-3x2-portrait.webp",
+    "originalLandscape": "gallery-people-portrait-original-2x3-landscape.webp",
+    "originalPortrait": "gallery-people-portrait-original-3x2-portrait.webp"
   },
   {
     "id": "people-silhouette-1",
