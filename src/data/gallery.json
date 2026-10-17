@@ -15,19 +15,19 @@
     "title": "Great Blue Heron",
     "aspectRatio": "3x2",
     "editedLandscape": "gallery-birds-heron-edited-3x2-landscape.webp",
-    "editedPortrait": "gallery-birds-heron-edited-4x5-portrait.webp",
+    "editedPortrait": "gallery-birds-heron-edited-2x3-portrait.webp",
     "originalLandscape": "gallery-birds-heron-original-3x2-landscape.webp",
-    "originalPortrait": "gallery-birds-heron-original-4x5-portrait.webp"
+    "originalPortrait": "gallery-birds-heron-original-2x3-portrait.webp"
   },
   {
-    "id": "wildlife-fox-1",
+    "id": "wildlife-fish-1",
     "category": "wildlife",
-    "title": "Red Fox",
+    "title": "Underwater Fish",
     "aspectRatio": "3x2",
-    "editedLandscape": "gallery-wildlife-fox-edited-3x2-landscape.webp",
-    "editedPortrait": "gallery-wildlife-fox-edited-4x5-portrait.webp",
-    "originalLandscape": "gallery-wildlife-fox-original-3x2-landscape.webp",
-    "originalPortrait": "gallery-wildlife-fox-original-4x5-portrait.webp"
+    "editedLandscape": "gallery-wildlife-fish-edited-3x2-landscape.webp",
+    "editedPortrait": "gallery-wildlife-fish-edited-2x3-portrait.webp",
+    "originalLandscape": "gallery-wildlife-fish-original-3x2-landscape.webp",
+    "originalPortrait": "gallery-wildlife-fish-original-2x3-portrait.webp"
   },
   {
     "id": "wildlife-deer-1",
